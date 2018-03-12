@@ -1,0 +1,129 @@
+﻿<!--
+    #authors:   Kaleb Eberhart
+    #date:      02/11/2018
+    #course:    CST-247
+    #professor: Mark Reha
+    #project:   Minesweeper Online 1.3
+    #file:      _GameBoard.cshtml
+    #revision:  1.0
+    #synapsis:  This is a partial view that holds the game board. We separated this
+                just for the purpose of beautification. It can be easily moved back
+                if required.
+-->
+@using MinesweeperMVC.Controllers
+@using MinesweeperMVC.Models.Business
+@using MinesweeperMVC.Models.Data
+@model MinesweeperMVC.Models.ButtonModel[,]
+
+@{
+    int x = GameController.Size;
+    var ajax = new AjaxOptions
+    {
+        HttpMethod = "POST",
+        InsertionMode = InsertionMode.Replace,
+        UpdateTargetId = "board",
+        OnSuccess = "ajaxSuccess"
+    };
+    GameDAO gd = new GameDAO();
+}
+<!--This script is used to handle right clicks and block the context menu on this page-->
+<script src="~/Scripts/Click.js"></script>
+<div id="board">
+    <table>
+        <tbody>
+            @for (int i = 0; i < x; i++)
+            {
+                <tr>
+                    @for (int j = 0; j < x; j++)
+                    {
+                        <td>
+                            @using (Ajax.BeginForm("LeftClick", "Game", ajax, new { id = "gameform" }))
+                            {
+                                <div oncontextmenu="return Post(@i, @j);">
+                                    <button id="btn" name="btn" style="border:solid;background:none;padding:0.5px;height:25px;width:25px;"
+                                            @{ if (Model[i, j].IsVisited || Model[i, j].Flagged) { @: disabled="disabled"
+                                            } } value="@i @j" onchange="$('gameform').trigger('submit', 'left');">
+                                        <!--All of these pictures still need to be reconfigured due to visual faults.-->
+                                        @if (Model[i, j].Flagged)
+                                        {
+                                            <img src="~/assets/img/Flag.png" />
+                                        }
+                                        else if (!Model[i, j].IsVisited && !Model[i, j].Flagged)
+                                        {
+                                            <img src="~/assets/img/MSButton.png" />
+                                        }
+                                        else if (Model[i, j].IsLive)
+                                        {
+                                            //This may be changed soon because it messes with sizing of the board.
+                                            <img src="~/assets/img/Bomb.png" />
+                                        }
+
+                                        else
+                                        {
+                                            @Model[i, j].LiveNeighbors
+                                        }
+                                    </button>
+                                </div>
+                            }
+                        </td>
+                    }
+                </tr>
+
+            }
+
+        </tbody>
+    </table>
+    <br />
+
+    <!--
+
+    This is where the visuals for teh undo button will be once I get that sorted out. For now, it is commented out because
+        it cannot be used.
+
+                @*
+                @using (Ajax.BeginForm("Revert", "Game", ajax, new { id = "undoform" }))
+                                                        {
+                                                            if (!GameController.Reverted && GameLogic.TurnCount != 0)
+                                                            {
+                                                                //GameController.Reverted = true;
+                        <button class="btn btn-warning btn-large" onchange="$('undoform').trigger('submit');">Undo</button>
+                        <p style="font-size:xx-small">*Using this will
+            </tbody>
+        </table>
+        <br />
+
+
+
+    <!--
+
+    @*
+    @using (Ajax.BeginForm("Revert", "Game", ajax, new { id = "undoform" }))
+                                            {
+                                                if (!GameController.Reverted && GameLogic.TurnCount != 0)
+                                                {
+                                                    //GameController.Reverted = true;
+            <button class="btn btn-warning btn-large" onchange="$('undoform').trigger('submit');">Undo</button>
+            <p style="font-size:xx-small">*Using this will disqualify this game from the highscores.</p>
+        }
+    }
+        *@-->
+    <div align="center">
+
+
+    <!--Logic added to delete the user's save once the game is won or lost.-->
+    @if (GameLogic.Lose)
+    {
+        gd.DeleteSave((int)Session["UserId"]);
+        <h2 class="text-danger">Loser</h2>
+        <a class="btn-success btn btn-large" href="../Home">Play again?</a>
+    }
+    else if (GameLogic.Win)
+    {
+        gd.DeleteSave((int)Session["UserId"]);
+        <h2>Winner</h2>
+        <a class="btn-success btn btn-large" href="../Home">Play again?</a>
+    }
+
+</div>
+</div>
+
