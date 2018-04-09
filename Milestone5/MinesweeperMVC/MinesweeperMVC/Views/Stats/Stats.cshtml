@@ -1,0 +1,62 @@
+﻿<!--
+    #authors:   Kaleb Eberhart
+    #date:      04/08/2018
+    #course:    CST-247
+    #professor: Mark Reha
+    #project:   Minesweeper Online 1.5
+    #file:      Stats.cshtml
+    #revision:  1.0
+    #synapsis:  This view is used to display the users stats. This may be expanded in the future
+                to allow the user to view global game stats.
+-->
+@model List<string>
+@{
+    if (Session["Logged"] == null)
+    {
+        Response.Redirect("~/Logout");
+    }
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+<html>
+<body>
+    <div align="center">
+        <h1>Your Stats</h1>
+        <br /><br />
+        @foreach (string stats in Model)
+        {
+            string[] newStat = stats.Split(',').ToArray();
+            int mins = int.Parse(newStat[2]) / 60;
+            int hours = mins / 60;
+            int days = hours / 24;
+            int secs = int.Parse(newStat[2]) % 60;
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <h3>Number of Wins: <b>@newStat[0]</b></h3>
+                            <br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Number of Losses: <b>@newStat[1]</b></h3>
+                            <br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Time Played: <b>@days days @hours hours @mins minutes @secs seconds</b></h3>
+                            <br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Total Turns: <b>@newStat[3]</b></h3>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        }
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+﻿<!--
+    #authors:   Kaleb Eberhart
+    #date:      01/26/2018
+    #course:    CST-247
+    #professor: Mark Reha
+    #project:   Minesweeper Online 1.5
+    #file:      Login.cshtml
+    #revision:  1.0
+    #synapsis:  This class is for displaying the user login page. In the future, we'd like
+                to integrate error checking into the razer code on this page, but for right
+                now, the errors are being checked in the controller/model.
+-->
+
+@model MinesweeperMVC.Models.UserModel
+
+@{
+    Layout = "~/Views/Shared/_GuestLayout.cshtml";
+}
+<html>
+<body>
+    <div class="container" align="center">
+        @Html.ValidationMessage("LoginError", new { @class = "text-danger" })
+    </div>
+
+    <div class="login-clean" style="min-height:90vh;">
+
+        @using (Html.BeginForm("Login", "Login", FormMethod.Post, new { style = "background-color:#7e7d7d;" }))
+        {
+            @Html.AntiForgeryToken()
+            <h2 class="sr-only">Login Form</h2>
+            <div class="illustration"><i class="fa fa-bomb" style="color:#222222;"></i></div>
+            <div class="form-group">
+                @Html.EditorFor(model => model.Username, new { htmlAttributes = new { @class = "form-control", placeholder = "Username", required = "required" } })
+                @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control", placeholder = "Password", @type = "password", minlength = 8, required = "required" } })
+                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary btn-block" type="submit" style="background-color:#222222;">Log In</button>
+            </div>
+        }
+    </div>
+</body>
+</html>
