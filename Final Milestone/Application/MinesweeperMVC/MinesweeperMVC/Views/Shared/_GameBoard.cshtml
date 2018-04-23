@@ -1,0 +1,120 @@
+﻿<!--
+    #authors:   Kaleb Eberhart
+    #date:      02/11/2018
+    #course:    CST-247
+    #professor: Mark Reha
+    #project:   Minesweeper Online 1.6
+    #file:      _GameBoard.cshtml
+    #revision:  1.0
+    #synapsis:  This is a partial view that holds the game board. We separated this
+                just for the purpose of beautification. It can be easily moved back
+                if required.
+
+                ---------UPDATE MILESTONE 5------------
+                -Removed database calls from this page per requirements.
+-->
+@using MinesweeperMVC.Controllers
+@using MinesweeperMVC.Services.Utilities
+@model MinesweeperMVC.Models.ButtonModel[,]
+
+@{
+    int x = GameController.Size;
+    var ajax = new AjaxOptions
+    {
+        HttpMethod = "POST",
+        InsertionMode = InsertionMode.Replace,
+        UpdateTargetId = "board",
+        OnSuccess = "ajaxSuccess"
+    };
+}
+<!--This script is used to handle right clicks and block the context menu on this page-->
+<script src="~/Scripts/Click.js"></script>
+<div id="board">
+    <table>
+        <tbody>
+            @for (int i = 0; i < x; i++)
+            {
+                <tr>
+                    @for (int j = 0; j < x; j++)
+                    {
+                        <td>
+                            @using (Ajax.BeginForm("LeftClick", "Game", ajax, new { id = "gameform" }))
+                            {
+                                int save;
+                                if (GameLogic.SaveGame)
+                                {
+                                    save = 0;
+                                }
+                                else
+                                {
+                                    save = 1;
+                                }
+                                <div oncontextmenu="return Post(@i, @j, @save);">
+                                    <button id="btn" name="btn" style="border:solid;background:none;padding:0.5px;height:25px;width:25px;"
+                                            @{ if (Model[i, j].IsVisited || Model[i, j].Flagged) { @: disabled="disabled"
+                                            } } value="@i @j" onchange="$('gameform').trigger('submit', 'left');">
+                                        <!--All of these pictures still need to be reconfigured due to visual faults.-->
+                                        @if (Model[i, j].Flagged)
+                                        {
+                                            <img src="~/assets/img/Flag.png" />
+                                        }
+                                        else if (!Model[i, j].IsVisited && !Model[i, j].Flagged)
+                                        {
+                                            <img src="~/assets/img/MSButton.png" />
+                                        }
+                                        else if (Model[i, j].IsLive)
+                                        {
+                                            //This may be changed soon because it messes with sizing of the board.
+                                            <img src="~/assets/img/Bomb.png" />
+                                        }
+
+                                        else
+                                        {
+                                            @Model[i, j].LiveNeighbors
+                                        }
+                                    </button>
+                                </div>
+                            }
+                        </td>
+                    }
+                </tr>
+
+            }
+
+        </tbody>
+    </table>
+    <br />
+    <div align="center">
+
+        @if (GameLogic.Lose)
+        {
+            <h2 class="text-danger">Loser</h2>
+            <a class="btn-success btn btn-large" href="~/Home">Play again?</a>
+        }
+        else if (GameLogic.Win)
+        {
+            <h2>Winner</h2>
+            <a class="btn-success btn btn-large" href="~/Home">Play again?</a>
+        }
+        else
+        {
+            if (GameLogic.TurnCount > 0)
+            {
+
+
+                using (Html.BeginForm("SaveGame", "Save", FormMethod.Post))
+                {
+                    @Html.AntiForgeryToken()
+                    <input type="text" placeholder="Save Name" name="name" required maxlength="50" />
+                    <button class="btn btn-success" type="submit">Save game</button>
+                    <p style="font-size:xx-small">
+                        *Warning: saving your game will remove your chances of getting into the high scores.
+                        <br />*if you already have 4 custom saves, the oldest will be overwritten
+                    </p>
+                }
+            }
+        }
+
+    </div>
+</div>
+

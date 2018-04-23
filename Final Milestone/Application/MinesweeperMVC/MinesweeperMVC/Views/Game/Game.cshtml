@@ -1,0 +1,26 @@
+﻿<!--
+    #authors:   Kaleb Eberhart
+    #date:      02/11/2018
+    #course:    CST-247
+    #professor: Mark Reha
+    #project:   Minesweeper Online 1.6
+    #file:      Game.cshtml
+    #revision:  1.0
+    #synapsis:  This view is used to hold the actual play board. The play board
+                is in a separate partial view currently.
+-->
+@{
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+<html>
+<body>
+    <div align="center">
+        <h1>Minesweeper</h1>
+        <p style="font-size:xx-small">*Please note, if you are playing a saved game, you will not be able to use right click to add flags.
+        We are working hard to try and fix this bug and thank you for understanding.</p>
+    </div>
+    <div id="board" class="table-responsive" align="center" style="min-height:53vh;min-width:80vw;">
+        @{ Html.RenderAction("LoadBoard"); }
+    </div>
+</body>
+</html>

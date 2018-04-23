@@ -1,0 +1,40 @@
+﻿<!--
+    #authors:   Kaleb Eberhart
+    #date:      02/11/2018
+    #course:    CST-247
+    #professor: Mark Reha
+    #project:   Minesweeper Online 1.6
+    #file:      Home.cshtml
+    #revision:  1.0
+    #synapsis:  This view is only used to redirect the user to a new game.
+-->
+@model string
+@{
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+<html>
+<body>
+    <div align="center">
+        <h1>Play Minesweeper!</h1>
+        <hr />
+        <a class="btn btn-primary btn-large" href="../Game/StartGame?difficulty=1">
+            Play an easy game
+        </a>
+        <hr />
+        <a class="btn btn-warning btn-large" href="../Game/StartGame?difficulty=2">
+            Play a medium game
+        </a>
+        <hr />
+        <a class="btn btn-danger btn-large" href="../Game/StartGame?difficulty=3">
+            Play a hard game
+        </a>
+        @if (Model == "True")
+        {
+            <hr />
+            <a class="btn btn-success btn-large" href="../Save">
+                View saved games
+            </a>
+        }
+    </div>
+</body>
+</html>

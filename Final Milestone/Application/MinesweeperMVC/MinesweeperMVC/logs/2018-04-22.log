@@ -1,0 +1,329 @@
+2018-04-22 23:00:16.5984 INFO SecurityService instantiated
+2018-04-22 23:00:16.6255 INFO UserService instantiated
+2018-04-22 23:00:16.6255 INFO UserDAO instantiated
+2018-04-22 23:00:16.6401 INFO SecurityDAO instantiated
+2018-04-22 23:00:16.6401 INFO StatsDAO instantiated
+2018-04-22 23:00:16.6506 INFO GameDAO instantiated
+2018-04-22 23:00:16.6506 INFO SecurityService instantiated
+2018-04-22 23:00:16.6506 INFO Login method invoked in UserService
+2018-04-22 23:00:16.6682 INFO GetPass method invoked in SecurityDAO
+2018-04-22 23:00:17.2340 INFO CheckHash method invoked in SecurityService
+2018-04-22 23:00:17.2876 INFO GetUserId method invoked in UserService
+2018-04-22 23:00:17.2926 INFO GetUserId method invoked in UserDAO
+2018-04-22 23:00:17.2926 INFO CheckSaves method invoked in UserService
+2018-04-22 23:00:17.3112 INFO CheckSaves method invoked in GameDAO
+2018-04-22 23:00:19.4769 INFO GameDAO instantiated
+2018-04-22 23:00:19.4829 INFO StatsDAO instantiated
+2018-04-22 23:00:19.4829 INFO ScoresDAO instantiated
+2018-04-22 23:00:19.4970 INFO CheckSaves method invoked in GameService class.
+2018-04-22 23:00:19.4970 INFO CheckSaves method invoked in GameDAO
+2018-04-22 23:00:21.2561 INFO GameDAO instantiated
+2018-04-22 23:00:21.2615 INFO StatsDAO instantiated
+2018-04-22 23:00:21.2615 INFO ScoresDAO instantiated
+2018-04-22 23:00:21.2615 INFO GetStats method invoked in GameService class
+2018-04-22 23:00:21.2815 INFO GetStats method invoked in StatsDAO
+2018-04-22 23:00:26.9631 INFO GameDAO instantiated
+2018-04-22 23:00:26.9631 INFO StatsDAO instantiated
+2018-04-22 23:00:26.9631 INFO ScoresDAO instantiated
+2018-04-22 23:00:31.7634 INFO GameDAO instantiated
+2018-04-22 23:00:31.7634 INFO StatsDAO instantiated
+2018-04-22 23:00:31.7634 INFO ScoresDAO instantiated
+2018-04-22 23:01:09.1813 INFO GameDAO instantiated
+2018-04-22 23:01:09.1874 INFO StatsDAO instantiated
+2018-04-22 23:01:09.1874 INFO ScoresDAO instantiated
+2018-04-22 23:20:04.8011 INFO GameDAO instantiated
+2018-04-22 23:20:04.8277 INFO StatsDAO instantiated
+2018-04-22 23:20:04.8277 INFO ScoresDAO instantiated
+2018-04-22 23:21:46.3662 INFO SecurityService instantiated
+2018-04-22 23:21:46.3888 INFO UserService instantiated
+2018-04-22 23:21:46.3888 INFO UserDAO instantiated
+2018-04-22 23:21:46.4019 INFO SecurityDAO instantiated
+2018-04-22 23:21:46.4019 INFO StatsDAO instantiated
+2018-04-22 23:21:46.4019 INFO GameDAO instantiated
+2018-04-22 23:21:46.4215 INFO SecurityService instantiated
+2018-04-22 23:21:46.4215 INFO Login method invoked in UserService
+2018-04-22 23:21:46.4329 INFO GetPass method invoked in SecurityDAO
+2018-04-22 23:21:47.0257 INFO CheckHash method invoked in SecurityService
+2018-04-22 23:21:47.0799 INFO GetUserId method invoked in UserService
+2018-04-22 23:21:47.0799 INFO GetUserId method invoked in UserDAO
+2018-04-22 23:21:47.0939 INFO CheckSaves method invoked in UserService
+2018-04-22 23:21:47.0939 INFO CheckSaves method invoked in GameDAO
+2018-04-22 23:21:49.4926 INFO GameDAO instantiated
+2018-04-22 23:21:49.4992 INFO StatsDAO instantiated
+2018-04-22 23:21:49.4992 INFO ScoresDAO instantiated
+2018-04-22 23:21:49.5116 INFO GetStats method invoked in GameService class
+2018-04-22 23:21:49.5116 INFO GetStats method invoked in StatsDAO
+2018-04-22 23:22:52.5509 INFO UserService instantiated
+2018-04-22 23:22:52.5737 INFO UserDAO instantiated
+2018-04-22 23:22:52.5737 INFO SecurityDAO instantiated
+2018-04-22 23:22:52.5737 INFO StatsDAO instantiated
+2018-04-22 23:22:52.5919 INFO GameDAO instantiated
+2018-04-22 23:22:52.5919 INFO SecurityService instantiated
+2018-04-22 23:22:52.6058 INFO SecurityService instantiated
+2018-04-22 23:22:52.6058 INFO ValidatePassword method invoked in SecurityService
+2018-04-22 23:22:52.6058 INFO CheckExisting method invoked in UserService
+2018-04-22 23:22:52.6265 INFO CheckExisting method invoked in SecurityDAO
+2018-04-22 23:22:52.6583 WARN User tried to register existing username
+2018-04-22 23:23:09.3652 INFO UserService instantiated
+2018-04-22 23:23:09.3732 INFO UserDAO instantiated
+2018-04-22 23:23:09.3732 INFO SecurityDAO instantiated
+2018-04-22 23:23:09.3873 INFO StatsDAO instantiated
+2018-04-22 23:23:09.3873 INFO GameDAO instantiated
+2018-04-22 23:23:09.4007 INFO SecurityService instantiated
+2018-04-22 23:23:09.4007 INFO SecurityService instantiated
+2018-04-22 23:23:09.4007 INFO ValidatePassword method invoked in SecurityService
+2018-04-22 23:23:09.4183 INFO CheckExisting method invoked in UserService
+2018-04-22 23:23:09.4183 INFO CheckExisting method invoked in SecurityDAO
+2018-04-22 23:23:09.4349 INFO PasswordHasher method invoked in SecurityService
+2018-04-22 23:23:09.4841 INFO Register method invoked in UserService
+2018-04-22 23:23:09.4841 INFO Register method invoked in UserDAO
+2018-04-22 23:23:09.4979 INFO New user kaleb2 has been registered
+2018-04-22 23:23:09.4979 INFO CreatePlayer method invoked in StatsDAO
+2018-04-22 23:23:09.5159 INFO New user added to stats database
+2018-04-22 23:23:14.9698 INFO SecurityService instantiated
+2018-04-22 23:23:14.9698 INFO UserService instantiated
+2018-04-22 23:23:14.9818 INFO UserDAO instantiated
+2018-04-22 23:23:14.9818 INFO SecurityDAO instantiated
+2018-04-22 23:23:14.9951 INFO StatsDAO instantiated
+2018-04-22 23:23:14.9951 INFO GameDAO instantiated
+2018-04-22 23:23:14.9951 INFO SecurityService instantiated
+2018-04-22 23:23:15.0128 INFO Login method invoked in UserService
+2018-04-22 23:23:15.0128 INFO GetPass method invoked in SecurityDAO
+2018-04-22 23:23:15.0277 INFO CheckHash method invoked in SecurityService
+2018-04-22 23:23:15.0783 INFO GetUserId method invoked in UserService
+2018-04-22 23:23:15.0783 INFO GetUserId method invoked in UserDAO
+2018-04-22 23:23:15.0939 INFO CheckSaves method invoked in UserService
+2018-04-22 23:23:15.0939 INFO CheckSaves method invoked in GameDAO
+2018-04-22 23:23:55.2417 INFO SecurityService instantiated
+2018-04-22 23:23:55.2667 INFO UserService instantiated
+2018-04-22 23:23:55.2667 INFO UserDAO instantiated
+2018-04-22 23:23:55.2795 INFO SecurityDAO instantiated
+2018-04-22 23:23:55.2795 INFO StatsDAO instantiated
+2018-04-22 23:23:55.2913 INFO GameDAO instantiated
+2018-04-22 23:23:55.2913 INFO SecurityService instantiated
+2018-04-22 23:23:55.2913 INFO Login method invoked in UserService
+2018-04-22 23:23:55.3120 INFO GetPass method invoked in SecurityDAO
+2018-04-22 23:23:55.3475 INFO CheckHash method invoked in SecurityService
+2018-04-22 23:23:55.3978 INFO GetUserId method invoked in UserService
+2018-04-22 23:23:55.4049 INFO GetUserId method invoked in UserDAO
+2018-04-22 23:23:55.4049 INFO CheckSaves method invoked in UserService
+2018-04-22 23:23:55.4189 INFO CheckSaves method invoked in GameDAO
+2018-04-22 23:25:41.2412 INFO SecurityService instantiated
+2018-04-22 23:25:41.2638 INFO UserService instantiated
+2018-04-22 23:25:41.2638 INFO UserDAO instantiated
+2018-04-22 23:25:41.2773 INFO SecurityDAO instantiated
+2018-04-22 23:25:41.2773 INFO StatsDAO instantiated
+2018-04-22 23:25:41.2916 INFO GameDAO instantiated
+2018-04-22 23:25:41.2916 INFO SecurityService instantiated
+2018-04-22 23:25:41.2916 INFO Login method invoked in UserService
+2018-04-22 23:25:41.3089 INFO GetPass method invoked in SecurityDAO
+2018-04-22 23:25:41.3284 INFO CheckHash method invoked in SecurityService
+2018-04-22 23:25:41.3790 INFO GetUserId method invoked in UserService
+2018-04-22 23:25:41.3855 INFO GetUserId method invoked in UserDAO
+2018-04-22 23:25:41.3855 INFO CheckSaves method invoked in UserService
+2018-04-22 23:25:41.3855 INFO CheckSaves method invoked in GameDAO
+2018-04-22 23:25:42.6221 INFO GameDAO instantiated
+2018-04-22 23:25:42.6221 INFO StatsDAO instantiated
+2018-04-22 23:25:42.6221 INFO ScoresDAO instantiated
+2018-04-22 23:25:42.6416 INFO GetStats method invoked in GameService class
+2018-04-22 23:25:42.6416 INFO GetStats method invoked in StatsDAO
+2018-04-22 23:25:43.6133 INFO GameDAO instantiated
+2018-04-22 23:25:43.6193 INFO StatsDAO instantiated
+2018-04-22 23:25:43.6193 INFO ScoresDAO instantiated
+2018-04-22 23:25:43.6193 INFO GetScores method invoked in GameService class
+2018-04-22 23:25:43.6428 INFO GetScores method invoked in ScoresDAO
+2018-04-22 23:25:46.8772 INFO GameDAO instantiated
+2018-04-22 23:25:46.8772 INFO StatsDAO instantiated
+2018-04-22 23:25:46.8892 INFO ScoresDAO instantiated
+2018-04-22 23:25:46.8892 INFO CheckSaves method invoked in GameService class.
+2018-04-22 23:25:46.9022 INFO CheckSaves method invoked in GameDAO
+2018-04-22 23:25:51.0170 INFO GameDAO instantiated
+2018-04-22 23:25:51.0170 INFO StatsDAO instantiated
+2018-04-22 23:25:51.0270 INFO ScoresDAO instantiated
+2018-04-22 23:25:51.0270 INFO GameEnd method invoked in GameService class.
+2018-04-22 23:25:51.0413 INFO UpdateStats method invoked in StatsDAO
+2018-04-22 23:25:51.0813 INFO GetStats method invoked in StatsDAO
+2018-04-22 23:25:52.5574 INFO UpdateStats method invoked in StatsDAO
+2018-04-22 23:25:52.5574 INFO Global game stats updating in the database
+2018-04-22 23:25:52.5574 INFO GetStats method invoked in StatsDAO
+2018-04-22 23:25:52.5749 INFO DeleteSave method invoked in GameService class
+2018-04-22 23:25:52.5749 INFO DeleteSave method invoked in GameDAO
+2018-04-22 23:25:52.7945 INFO GameDAO instantiated
+2018-04-22 23:25:52.7945 INFO StatsDAO instantiated
+2018-04-22 23:25:52.8072 INFO ScoresDAO instantiated
+2018-04-22 23:25:52.8072 INFO GameEnd method invoked in GameService class.
+2018-04-22 23:25:52.8072 INFO UpdateStats method invoked in StatsDAO
+2018-04-22 23:25:52.8227 INFO GetStats method invoked in StatsDAO
+2018-04-22 23:25:52.8227 INFO UpdateStats method invoked in StatsDAO
+2018-04-22 23:25:52.8227 INFO Global game stats updating in the database
+2018-04-22 23:25:52.8434 INFO GetStats method invoked in StatsDAO
+2018-04-22 23:25:52.8434 INFO DeleteSave method invoked in GameService class
+2018-04-22 23:25:52.8549 INFO DeleteSave method invoked in GameDAO
+2018-04-22 23:25:53.8614 INFO GameDAO instantiated
+2018-04-22 23:25:53.8614 INFO StatsDAO instantiated
+2018-04-22 23:25:53.8724 INFO ScoresDAO instantiated
+2018-04-22 23:25:53.8724 INFO CheckSaves method invoked in GameService class.
+2018-04-22 23:25:53.8724 INFO CheckSaves method invoked in GameDAO
+2018-04-22 23:25:54.9587 INFO GameDAO instantiated
+2018-04-22 23:25:54.9641 INFO StatsDAO instantiated
+2018-04-22 23:25:54.9641 INFO ScoresDAO instantiated
+2018-04-22 23:25:54.9641 INFO GetScores method invoked in GameService class
+2018-04-22 23:25:54.9813 INFO GetScores method invoked in ScoresDAO
+2018-04-22 23:25:55.9153 INFO GameDAO instantiated
+2018-04-22 23:25:55.9220 INFO StatsDAO instantiated
+2018-04-22 23:25:55.9220 INFO ScoresDAO instantiated
+2018-04-22 23:25:55.9331 INFO GetScores method invoked in GameService class
+2018-04-22 23:25:55.9331 INFO GetScores method invoked in ScoresDAO
+2018-04-22 23:25:57.0370 INFO GameDAO instantiated
+2018-04-22 23:25:57.0420 INFO StatsDAO instantiated
+2018-04-22 23:25:57.0420 INFO ScoresDAO instantiated
+2018-04-22 23:25:57.0420 INFO CheckSaves method invoked in GameService class.
+2018-04-22 23:25:57.0620 INFO CheckSaves method invoked in GameDAO
+2018-04-22 23:25:59.1825 INFO GameDAO instantiated
+2018-04-22 23:25:59.1825 INFO StatsDAO instantiated
+2018-04-22 23:25:59.1825 INFO ScoresDAO instantiated
+2018-04-22 23:25:59.1987 INFO GameEnd method invoked in GameService class.
+2018-04-22 23:25:59.1987 INFO UpdateStats method invoked in StatsDAO
+2018-04-22 23:25:59.1987 INFO GetStats method invoked in StatsDAO
+2018-04-22 23:25:59.2183 INFO UpdateStats method invoked in StatsDAO
+2018-04-22 23:25:59.2183 INFO Global game stats updating in the database
+2018-04-22 23:25:59.2315 INFO GetStats method invoked in StatsDAO
+2018-04-22 23:25:59.2315 INFO DeleteSave method invoked in GameService class
+2018-04-22 23:25:59.2315 INFO DeleteSave method invoked in GameDAO
+2018-04-22 23:26:00.1276 INFO GameDAO instantiated
+2018-04-22 23:26:00.1276 INFO StatsDAO instantiated
+2018-04-22 23:26:00.1416 INFO ScoresDAO instantiated
+2018-04-22 23:26:00.1416 INFO CheckSaves method invoked in GameService class.
+2018-04-22 23:26:00.1523 INFO CheckSaves method invoked in GameDAO
+2018-04-22 23:26:01.0907 INFO GameDAO instantiated
+2018-04-22 23:26:01.0907 INFO StatsDAO instantiated
+2018-04-22 23:26:01.1053 INFO ScoresDAO instantiated
+2018-04-22 23:26:01.1053 INFO GetSaves method invoked in GameService class.
+2018-04-22 23:26:01.1053 INFO GetSaves method invoked in GameDAO
+2018-04-22 23:26:02.2183 INFO GameDAO instantiated
+2018-04-22 23:26:02.2183 INFO StatsDAO instantiated
+2018-04-22 23:26:02.2314 INFO ScoresDAO instantiated
+2018-04-22 23:26:02.2314 INFO GetSize method invoked in GameService class.
+2018-04-22 23:26:03.7435 INFO SetArray method invoked in GameDAO
+2018-04-22 23:26:06.1200 INFO GameDAO instantiated
+2018-04-22 23:26:06.1733 INFO StatsDAO instantiated
+2018-04-22 23:26:06.1733 INFO ScoresDAO instantiated
+2018-04-22 23:26:06.1846 INFO SaveGame method invoked in GameService class.
+2018-04-22 23:26:06.1846 INFO SaveGame method invoked in GameDAO
+2018-04-22 23:26:06.1846 INFO CheckSaves method invoked in GameDAO
+2018-04-22 23:26:06.2053 INFO CountSaves method invoked in GameDAO
+2018-04-22 23:26:12.1165 INFO GameDAO instantiated
+2018-04-22 23:26:12.1244 INFO StatsDAO instantiated
+2018-04-22 23:26:12.1244 INFO ScoresDAO instantiated
+2018-04-22 23:26:12.1351 INFO SaveGame method invoked in GameService class.
+2018-04-22 23:26:12.1351 INFO SaveGame method invoked in GameDAO
+2018-04-22 23:26:12.1351 INFO CheckSaves method invoked in GameDAO
+2018-04-22 23:26:15.8036 INFO GameDAO instantiated
+2018-04-22 23:26:15.8102 INFO StatsDAO instantiated
+2018-04-22 23:26:15.8102 INFO ScoresDAO instantiated
+2018-04-22 23:26:15.8102 INFO CheckSaves method invoked in GameService class.
+2018-04-22 23:26:15.8289 INFO CheckSaves method invoked in GameDAO
+2018-04-22 23:26:17.5274 INFO GameDAO instantiated
+2018-04-22 23:26:17.5274 INFO StatsDAO instantiated
+2018-04-22 23:26:17.5274 INFO ScoresDAO instantiated
+2018-04-22 23:26:17.5445 INFO GetSaves method invoked in GameService class.
+2018-04-22 23:26:17.5445 INFO GetSaves method invoked in GameDAO
+2018-04-22 23:26:18.8058 INFO GameDAO instantiated
+2018-04-22 23:26:18.8124 INFO StatsDAO instantiated
+2018-04-22 23:26:18.8124 INFO ScoresDAO instantiated
+2018-04-22 23:26:18.8237 INFO DeleteSave method invoked in GameService class
+2018-04-22 23:26:18.8237 INFO DeleteSave method invoked in GameDAO
+2018-04-22 23:26:18.8384 INFO GetSaves method invoked in GameService class.
+2018-04-22 23:26:18.8384 INFO GetSaves method invoked in GameDAO
+2018-04-22 23:26:19.4647 INFO GameDAO instantiated
+2018-04-22 23:26:19.4647 INFO StatsDAO instantiated
+2018-04-22 23:26:19.4647 INFO ScoresDAO instantiated
+2018-04-22 23:26:19.4838 INFO DeleteSave method invoked in GameService class
+2018-04-22 23:26:19.4838 INFO DeleteSave method invoked in GameDAO
+2018-04-22 23:26:19.4970 INFO GetSaves method invoked in GameService class.
+2018-04-22 23:26:19.4970 INFO GetSaves method invoked in GameDAO
+2018-04-22 23:26:20.3329 INFO GameDAO instantiated
+2018-04-22 23:26:20.3395 INFO StatsDAO instantiated
+2018-04-22 23:26:20.3395 INFO ScoresDAO instantiated
+2018-04-22 23:26:20.3395 INFO CheckSaves method invoked in GameService class.
+2018-04-22 23:26:20.3570 INFO CheckSaves method invoked in GameDAO
+2018-04-22 23:26:23.8617 INFO GameDAO instantiated
+2018-04-22 23:26:23.8617 INFO StatsDAO instantiated
+2018-04-22 23:26:23.8728 INFO ScoresDAO instantiated
+2018-04-22 23:26:23.8728 INFO GameEnd method invoked in GameService class.
+2018-04-22 23:26:23.8864 INFO UpdateStats method invoked in StatsDAO
+2018-04-22 23:26:23.8864 INFO GetStats method invoked in StatsDAO
+2018-04-22 23:26:23.8864 INFO UpdateStats method invoked in StatsDAO
+2018-04-22 23:26:23.9046 INFO Global game stats updating in the database
+2018-04-22 23:26:23.9046 INFO GetStats method invoked in StatsDAO
+2018-04-22 23:26:23.9185 INFO DeleteSave method invoked in GameService class
+2018-04-22 23:26:23.9185 INFO DeleteSave method invoked in GameDAO
+2018-04-22 23:26:24.9103 INFO GameDAO instantiated
+2018-04-22 23:26:24.9163 INFO StatsDAO instantiated
+2018-04-22 23:26:24.9163 INFO ScoresDAO instantiated
+2018-04-22 23:26:24.9319 INFO CheckSaves method invoked in GameService class.
+2018-04-22 23:26:24.9319 INFO CheckSaves method invoked in GameDAO
+2018-04-22 23:26:25.9603 INFO GameDAO instantiated
+2018-04-22 23:26:25.9687 INFO StatsDAO instantiated
+2018-04-22 23:26:25.9687 INFO ScoresDAO instantiated
+2018-04-22 23:26:25.9794 INFO GameEnd method invoked in GameService class.
+2018-04-22 23:26:25.9794 INFO UpdateStats method invoked in StatsDAO
+2018-04-22 23:26:25.9794 INFO GetStats method invoked in StatsDAO
+2018-04-22 23:26:26.0057 INFO UpdateStats method invoked in StatsDAO
+2018-04-22 23:26:26.0115 INFO Global game stats updating in the database
+2018-04-22 23:26:26.0115 INFO GetStats method invoked in StatsDAO
+2018-04-22 23:26:26.0115 INFO DeleteSave method invoked in GameService class
+2018-04-22 23:26:26.0287 INFO DeleteSave method invoked in GameDAO
+2018-04-22 23:26:26.9292 INFO GameDAO instantiated
+2018-04-22 23:26:26.9347 INFO StatsDAO instantiated
+2018-04-22 23:26:26.9347 INFO ScoresDAO instantiated
+2018-04-22 23:26:26.9347 INFO CheckSaves method invoked in GameService class.
+2018-04-22 23:26:26.9535 INFO CheckSaves method invoked in GameDAO
+2018-04-22 23:26:27.8506 INFO GameDAO instantiated
+2018-04-22 23:26:27.8563 INFO StatsDAO instantiated
+2018-04-22 23:26:29.3718 INFO ScoresDAO instantiated
+2018-04-22 23:26:29.3718 INFO GameEnd method invoked in GameService class.
+2018-04-22 23:26:29.3718 INFO UpdateStats method invoked in StatsDAO
+2018-04-22 23:26:29.3904 INFO GetStats method invoked in StatsDAO
+2018-04-22 23:26:29.3904 INFO UpdateStats method invoked in StatsDAO
+2018-04-22 23:26:29.4015 INFO Global game stats updating in the database
+2018-04-22 23:26:29.4015 INFO GetStats method invoked in StatsDAO
+2018-04-22 23:26:29.4015 INFO DeleteSave method invoked in GameService class
+2018-04-22 23:26:29.4197 INFO DeleteSave method invoked in GameDAO
+2018-04-22 23:26:29.6900 INFO GameDAO instantiated
+2018-04-22 23:26:29.6900 INFO StatsDAO instantiated
+2018-04-22 23:26:29.7038 INFO ScoresDAO instantiated
+2018-04-22 23:26:29.7038 INFO GameEnd method invoked in GameService class.
+2018-04-22 23:26:29.7145 INFO UpdateStats method invoked in StatsDAO
+2018-04-22 23:26:29.7145 INFO GetStats method invoked in StatsDAO
+2018-04-22 23:26:29.7145 INFO UpdateStats method invoked in StatsDAO
+2018-04-22 23:26:29.7339 INFO Global game stats updating in the database
+2018-04-22 23:26:29.7339 INFO GetStats method invoked in StatsDAO
+2018-04-22 23:26:29.7454 INFO DeleteSave method invoked in GameService class
+2018-04-22 23:26:29.7454 INFO DeleteSave method invoked in GameDAO
+2018-04-22 23:26:31.1235 INFO GameDAO instantiated
+2018-04-22 23:26:31.1235 INFO StatsDAO instantiated
+2018-04-22 23:26:31.1375 INFO ScoresDAO instantiated
+2018-04-22 23:26:31.1375 INFO CheckSaves method invoked in GameService class.
+2018-04-22 23:26:31.1375 INFO CheckSaves method invoked in GameDAO
+2018-04-22 23:26:33.0654 INFO GameDAO instantiated
+2018-04-22 23:26:33.0654 INFO StatsDAO instantiated
+2018-04-22 23:26:33.0762 INFO ScoresDAO instantiated
+2018-04-22 23:26:33.0762 INFO GameEnd method invoked in GameService class.
+2018-04-22 23:26:33.0762 INFO UpdateStats method invoked in StatsDAO
+2018-04-22 23:26:33.0948 INFO GetStats method invoked in StatsDAO
+2018-04-22 23:26:33.0948 INFO UpdateStats method invoked in StatsDAO
+2018-04-22 23:26:33.1079 INFO Global game stats updating in the database
+2018-04-22 23:26:33.1079 INFO GetStats method invoked in StatsDAO
+2018-04-22 23:26:33.1199 INFO DeleteSave method invoked in GameService class
+2018-04-22 23:26:33.1199 INFO DeleteSave method invoked in GameDAO
+2018-04-22 23:26:34.0345 INFO GameDAO instantiated
+2018-04-22 23:26:34.0411 INFO StatsDAO instantiated
+2018-04-22 23:26:34.0411 INFO ScoresDAO instantiated
+2018-04-22 23:26:34.0411 INFO GetScores method invoked in GameService class
+2018-04-22 23:26:34.0592 INFO GetScores method invoked in ScoresDAO
+2018-04-22 23:26:34.6155 INFO GameDAO instantiated
+2018-04-22 23:26:34.6221 INFO StatsDAO instantiated
+2018-04-22 23:26:34.6221 INFO ScoresDAO instantiated
+2018-04-22 23:26:34.6380 INFO GetStats method invoked in GameService class
+2018-04-22 23:26:34.6380 INFO GetStats method invoked in StatsDAO

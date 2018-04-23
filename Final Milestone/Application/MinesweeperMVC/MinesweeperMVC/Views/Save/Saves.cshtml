@@ -1,0 +1,45 @@
+﻿<!--
+    #authors:   Kaleb Eberhart
+    #date:      04/06/2018
+    #course:    CST-247
+    #professor: Mark Reha
+    #project:   Minesweeper Online 1.6
+    #file:      Saves.cshtml
+    #revision:  1.0
+    #synapsis:  This view lists all of the user's current saves and allows them to load or
+                delete them if they please. Will probably be updated before the final milestone
+                to give the users a confirmation before they delete saves.
+-->
+@model List<string>
+
+@{
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+<html>
+<body>
+    <div align="center">
+        <h1>Saved Games</h1>
+        <hr />
+        <table>
+            <tbody>
+                @foreach (string save in Model)
+                {
+                    string[] newSave = save.Split(',').ToArray();
+                    string formatted = DateTime.Parse(newSave[1]).ToString("dd/M/yyyy");
+                    <tr>
+                        <td style="padding-bottom:30px;">
+                            <p><b>Date:</b> @formatted</p>
+                        </td>
+                        <td style="width:10%"></td>
+                        <td style="width:50%">
+                            <a class="btn btn-success" href="@Url.Action("LoadSave", "Game", new { id = newSave[0] })">Load @newSave[2]</a>
+                            <a class="btn btn-danger" href="@Url.Action("DeleteSave", "Save", new { id = newSave[0] })">Delete @newSave[2]</a>
+                            <hr />
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
